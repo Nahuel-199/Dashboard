@@ -13,7 +13,7 @@
         .logo{
             font-size: 20px;
             font-weight: bold;
-            color: #6439ff;
+            color: #089bf1;
         }
     }
 
@@ -50,7 +50,7 @@
 
                 .icon{
                     font-size: 18px;
-                    color: #7451f8;
+                    color: #089bf1;
                 }
 
                 span{
@@ -58,6 +58,13 @@
                     font-weight: 600;
                     color: #888;
                     margin-left: 10px;
+                }
+                img{
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    object-fit: cover;
                 }
             }
         }

@@ -9,15 +9,15 @@ const Widget = ({ type }) => {
     let data;
   
     //temporary
-    const amount = 100;
+    const amount = 90;
     const diff = 20;
   
     switch (type) {
       case "user":
         data = {
-          title: "USERS",
+          title: "DINERO TOTAL",
           isMoney: false,
-          link: "See all users",
+          link: "Configuraciones",
           icon: (
             <PersonOutlinedIcon
               className="icon"
@@ -31,9 +31,9 @@ const Widget = ({ type }) => {
         break;
       case "order":
         data = {
-          title: "ORDERS",
+          title: "DINERO GASTADO",
           isMoney: false,
-          link: "View all orders",
+          link: "Configuraciones",
           icon: (
             <ShoppingCartOutlinedIcon
               className="icon"
@@ -47,9 +47,9 @@ const Widget = ({ type }) => {
         break;
       case "earning":
         data = {
-          title: "EARNINGS",
+          title: "GASTO DE LA SEMANA",
           isMoney: true,
-          link: "View net earnings",
+          link: "Mirar detalle",
           icon: (
             <MonetizationOnOutlinedIcon
               className="icon"
@@ -60,9 +60,9 @@ const Widget = ({ type }) => {
         break;
       case "balance":
         data = {
-          title: "BALANCE",
+          title: "PORCENTAJE GASTADO",
           isMoney: true,
-          link: "See details",
+          link: "Ver detalle",
           icon: (
             <AccountBalanceWalletOutlinedIcon
               className="icon"

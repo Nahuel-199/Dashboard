@@ -1,14 +1,14 @@
 import React, { useContext } from 'react';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
-import StoreOutlinedIcon from '@mui/icons-material/StoreOutlined';
+// import StoreOutlinedIcon from '@mui/icons-material/StoreOutlined';
 import CreditCardOutlinedIcon from '@mui/icons-material/CreditCardOutlined';
-import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined';
-import AlignVerticalBottomOutlinedIcon from '@mui/icons-material/AlignVerticalBottomOutlined';
-import CircleNotificationsIcon from '@mui/icons-material/CircleNotifications';
-import SettingsSystemDaydreamIcon from '@mui/icons-material/SettingsSystemDaydream';
-import PsychologyOutlinedIcon from '@mui/icons-material/PsychologyOutlined';
-import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
+// import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined';
+// import AlignVerticalBottomOutlinedIcon from '@mui/icons-material/AlignVerticalBottomOutlined';
+// import CircleNotificationsIcon from '@mui/icons-material/CircleNotifications';
+// import SettingsSystemDaydreamIcon from '@mui/icons-material/SettingsSystemDaydream';
+// import PsychologyOutlinedIcon from '@mui/icons-material/PsychologyOutlined';
+// import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import ExitToAppOutlinedIcon from '@mui/icons-material/ExitToAppOutlined';
 import { Link } from "react-router-dom";
@@ -21,7 +21,7 @@ const Sidebar = () => {
     <div className='sidebar'>
       <div className='top'>
         <Link to="/" style={{ textDecoration: "none" }}>
-        <span className='logo'>Inceptia</span>
+        <span className='logo'>Traviu</span>
         </Link>
       </div>
       <hr />
@@ -29,56 +29,61 @@ const Sidebar = () => {
         <ul>
           <p className="title">MAIN</p>
           <li>
+          <Link to="/" style={{ textDecoration: "none" }}>
              <DashboardIcon className="icon"/>
             <span>Dashboard</span>
+            </Link>
             </li>
-            <p className="title">LIST</p>
+            <p className="title">DESTINO</p>
             <Link to="/users" style={{ textDecoration: "none" }}>
             <li>
-              <PersonOutlineOutlinedIcon className="icon"/>
-            <span>Users</span>
+            <input type="text" placeholder='Donde va a ir...' />
             </li>
             </Link>
-            <Link to="/products" style={{ textDecoration: "none" }}>
+            <p className="title">SELECCIÓN DE FECHA</p>
             <li>
-              <StoreOutlinedIcon className="icon"/>
-            <span>Products</span>
+             <input type="date" placeholder='Fecha de viaje...' />
             </li>
+            <p className="title">PERSONAS</p>
+            <li>
+              <Link to="/integrantes" style={{ textDecoration: "none" }}>
+            <PersonOutlineOutlinedIcon className="icon"/>
+            <span>Agregar integrante</span>
             </Link>
-            <li>
-             <CreditCardOutlinedIcon className="icon"/>
-            <span>Orders</span>
             </li>
-            <p className="title">USEFUL</p>
+            <p className="title">INTEGRANTES DEL VIAJE</p>
             <li>
-               <LocalShippingOutlinedIcon className="icon"/>
-            <span>Delivery</span>
+              <img src="https://m.media-amazon.com/images/I/81bc8mA3nKL._AC_UY327_FMwebp_QL65_.jpg" alt="profile"/>
+            <span>Nahuel C.</span>
             </li>
             <li>
-              <AlignVerticalBottomOutlinedIcon className="icon"/>
-            <span>Stats</span>
+            <img src="https://m.media-amazon.com/images/I/81bc8mA3nKL._AC_UY327_FMwebp_QL65_.jpg" alt="profile"/>
+            <span>Carlos S.</span>
             </li>
             <li>
-              <CircleNotificationsIcon className="icon"/>
-            <span>Notifications</span>
-            </li>
-            <p className="title">SERVICE</p>
-            <li>
-              <SettingsSystemDaydreamIcon className="icon"/>
-            <span>System Health</span>
+            <img src="https://m.media-amazon.com/images/I/81bc8mA3nKL._AC_UY327_FMwebp_QL65_.jpg" alt="profile"/>
+            <span>Felipe O.</span>
             </li>
             <li>
-              <PsychologyOutlinedIcon className="icon"/>
-            <span>Logs</span>
+            <img src="https://m.media-amazon.com/images/I/81bc8mA3nKL._AC_UY327_FMwebp_QL65_.jpg" alt="profile"/>
+            <span>Tomas V.</span>
             </li>
             <li>
-              <SettingsApplicationsIcon className="icon"/>
-            <span>Settings</span>
+            <img src="https://m.media-amazon.com/images/I/81bc8mA3nKL._AC_UY327_FMwebp_QL65_.jpg" alt="profile"/>
+            <span>Ivana A.</span>
             </li>
-            <p className="title">USER</p>
+            <p className="title">CUENTA</p>
             <li>
+              <Link to="/profile" style={{ textDecoration: "none" }}>
               <AccountCircleOutlinedIcon className="icon"/>
-            <span>Profile</span>
+            <span>Perfil</span>
+            </Link>
+            </li>
+            <li>
+              <Link to="/gastos" style={{ textDecoration: "none" }}>
+              <CreditCardOutlinedIcon className="icon"/>
+            <span>Agregar gasto</span>
+            </Link>
             </li>
             <li>
               <ExitToAppOutlinedIcon className="icon"/>

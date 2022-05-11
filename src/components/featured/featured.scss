@@ -25,21 +25,24 @@
         gap: 15px;
 
         .featuredChart{
-            width: 100px;
+            width: 155px;
             height: 100px;
         }
 
         .title{
+            font-size: 22px;
             font-weight: 500;
             color: gray;
+            margin-top: -10px;
         }
 
         .amount{
             font-size: 30px;
+            margin-top: 40px;
         }
 
         .desc{
-            font-size: 12px;
+            font-size: 15px;
             font-weight: 300;
             color: gray;
             text-align: center;

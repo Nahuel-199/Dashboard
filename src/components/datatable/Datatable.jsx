@@ -20,11 +20,11 @@ const DataTable = () => {
                 return (
                     <div className='cellAction'>
                       <Link to="/users/test" style={{ textDecoration: "none" }}>
-                        <div className="viewButton">View</div>
+                        <div className="viewButton">Ver</div>
                       </Link>
                         <div className="deleteButton" 
                         onClick={() => handleDelete(params.row.id)}>
-                          Delete
+                          Eliminar
                         </div>
                     </div>
                 );
@@ -35,9 +35,9 @@ const DataTable = () => {
   return (
     <div className='datatable'>
       <div className="datatableTitle">
-        Add New User
-        <Link to="/users/new" style={{ textDecoration: "none" }} className="link">
-          Add New
+        Integrantes del viaje
+        <Link to="/integrantes/nuevo" style={{ textDecoration: "none" }} className="link">
+          Agregar nuevo
         </Link>
       </div>
          <DataGrid
