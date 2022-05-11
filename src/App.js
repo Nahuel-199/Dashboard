@@ -28,7 +28,7 @@ function App() {
         </Route>
         <Route path='integrantes'>
           <Route index element={<List />} />
-          <Route path="nuevo" element={<New inputs={productInputs} title="Add New Product" />} />
+          <Route path="nuevo" element={<New inputs={productInputs} title="Agregar nuevo integrante" />} />
         </Route>
         </Route>
       </Routes>
